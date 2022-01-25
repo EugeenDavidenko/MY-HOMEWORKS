@@ -1,0 +1,190 @@
+
+			JSON
+
+1. Создать внешний репозиторий c названием JSON === Repositories --> New --> даем имя в Repository name --> радиобаттон Publc, чекбокс Add a README file --> Create repository
+2. Клонировать репозиторий JSON на локальный компьютер === заходим в репозиторий JSON --> Code --> выбираем HTTP, копируем ссылку на реп --> в gitbash заходим в нужную папку --> git clone https://github.com/EugeenDavidenko/JSON.git
+3. Внутри локального JSON создать файл “new.json” === в папке JSON на локальном репозитории --> touch new.json
+4. Добавить файл под гит === git add new.json
+5. Закоммитить файл === git commit -m "добавил new.json"
+6. Отправить файл на внешний GitHub репозиторий === git push
+7.Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON === vim new.json --> i --> заполняем :
+
+{ "name":"Евгений",
+  "surname":"Давыденко",
+  "patronymic":"Анатольевич",
+  "age":35,
+  "pets_count":0,
+  "salary": 80000
+}
+
+--> ESC --> :wq
+
+8. Отправить изменения на внешний репозиторий ===  git commit -am "заполнил new.json" --> git push
+9. Создать файл preferences.json === touch preferences.json
+10. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON ===  vim new.json --> i --> заполняем :
+
+{
+        "favorite_movie":"Тихое_место"
+        "favorite_serial":"Game_of_thrones"
+        "favorite_food":"fried_potatoes"
+        "favorite_season":"summer"
+        "wish_country":"Brasil"
+}
+
+--> ESC --> :wq
+
+11. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON === touch sklls.json --> vim sklls.json --> i --> заполняем :
+
+[ "Базовая_теория","Клиентсерверная_архитектура","Методы_запросов_на_сервер","Ответы_сервера","Структуры_запросов_и_ответов","Что_такое_JSON_XML","Тестирование_API","Снятие_и_чтение_логов","Postman","Fidler","VPN","DevTools","Мобильное_тестирование","Особенность_iOS_Android_гайдлайны","Сборка_iOSприложений_на_XCode","Сборка_Android_приложений_на_AndroidStudio","Перехват_мобильного_трафика_через_Charles","Настройка_прокси_на_iOS_и_Android","Командная строка","Простой bashскриптринг","Доступ к удалённым серверам","Основы_SQL","Git","Jmeter","Методология разработки Scrum","Python"]
+
+--> ESC --> :wq
+
+12. Отправить сразу 2 файла на внешний репозиторий === git status --> git fetch --> git commit -am "комментарий" --> git push
+13. На веб интерфейсе создать файл bug_report.json === заходим в GITHUB в репозиторий JSON -->  Add file --> Create new file --> даем файлу имя bug_report.json
+14. Сделать Commit changes (сохранить) изменения на веб интерфейсе === Commit new file
+15. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON === заходим в bug_report.json --> Редактировать(карандашик)--> вносим изменения
+16. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === кнопка Commit changes
+17. Синхронизировать внешний и локальный репозиторий JSON === заходим в Gitbash в папку JSON --> git fetch --> git pull
+
+			XML
+
+1. Создать внешний репозиторий c названием XML === Repositories --> New --> даем имя XML в Repository name --> радиобаттон Publc, чекбокс Add a README file --> Create repository
+2. Клонировать репозиторий XML на локальный компьютер  === заходим в репозиторий XML --> Code --> выбираем HTTP, копируем ссылку на реп --> в gitbash заходим в нужную папку --> git clone https://github.com/EugeenDavidenko/XML.git
+3. Внутри локального XML создать файл “new.xml”=== cd XML --> touch new.xml
+4. Добавить файл под гит. === git add new.xml
+5. Закоммитить файл. === git commit -m "добавил new.xml"
+6. Отправить файл на внешний GitHub репозиторий. === git push
+7. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML. === vim new.xml ---> i --> заполняем файл следующими данными:
+
+<aboutmyself>
+        <name>Евгений</name>
+        <surname>Давыденко</surname>
+        <patronymic>Анатольевич</patronymic>
+        <age>35</age>
+        <pets_count>0</pets_count>
+        <salary>80000</salary>
+</aboutmyself>
+
+ESC:wq
+
+8. Отправить изменения на внешний репозиторий. === git commit -am "заполнил new.xml" --> git push
+9. Создать файл preferences.xml === touch preferences.xml
+10. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML. === vim preferences.xml --> заполняем следующими данными:
+
+<aboutmyself>
+	<favoritefilm>Тихое место</favoritefilm>
+	<favoriteserial>Game of thrones</favoriteserial>
+	<favoritefood>Жареная картошка</favoritefood>
+	<favoriteseason>Лето</favoriteseason>
+	<favoritefilm>Тихое место</favoritefilm>
+	<wishcountry>Brasil</wishcountry>
+</aboutmyself>
+
+ESC:wq
+
+11. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML === touch sklls.xml --> vim sklls.xml --> заполняем файл следующими данными:
+
+<courseprogram>
+        <lesson>Базовая теория</lesson>
+        <lesson>Клиент серверная архитектура</lesson>
+        <lesson>Методы запросов на сервер</lesson>
+        <lesson>Ответы сервера</lesson>
+        <lesson>Структуры запросов и ответов</lesson>
+        <lesson>JSON,XML их структура</lesson>
+        <lesson>Тестирование API</lesson>
+        <lesson>Снятие и чтение логов</lesson>
+        <lesson>Postman,Fidler</lesson>
+        <lesson>VPN</lesson>
+        <lesson>DevTools</lesson>
+        <lesson>Мобильное тестирование</lesson>
+        <lesson>Особенность iOS, Android, гайдлайны</lesson>
+        <lesson>Сборка iOS приложений на XCode</lesson>
+        <lesson>Сборка Android приложений на Android Studio</lesson>
+        <lesson>Перехват мобильного трафика через Charles</lesson>
+        <lesson>Настройка прокси на iOS и Android</lesson>
+        <lesson>Командная строка (terminal) Linux Ubuntu</lesson>
+        <lesson>Простой bash скриптринг , автоматизация рутинных задач на сервере</lesson>
+        <lesson>Доступ к удалённым серверам</lesson>
+        <lesson>Основы SQL</lesson>
+        <lesson>Git</lesson>
+        <lesson>Jmeter</lesson>
+        <lesson>Методология разработки Scrum</lesson>
+        <lesson>Python</lesson>
+</courseprogram>
+
+ESC:wq
+
+12. Сделать коммит в одну строку === git add . --> git commit -am "комментарий"
+13. Отправить сразу 2 файла на внешний репозиторий. === git push
+14. На веб интерфейсе создать файл bug_report.xml.=== заходим в GITHUB в репозиторий XML -->  Add file --> Create new file --> даем файлу имя bug_report.xml
+15. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === Commit new file
+16. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML. === заходим в bug_report.xml --> Редактировать(карандашик)--> вносим изменения
+17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === кнопка Commit changes
+18. Синхронизировать внешний и локальный репозиторий XML === заходим в Gitbash в папку XML --> git fetch --> git pull
+
+			TXT
+
+ 1. Создать внешний репозиторий c названием TXT. === Repositories --> New --> даем имя TXT в Repository name --> радиобаттон Publc, чекбокс Add a README file --> Create repository
+ 2. Клонировать репозиторий TXT на локальный компьютер.=== заходим в репозиторий XML --> Code --> выбираем HTTP, копируем ссылку на реп --> в gitbash заходим в нужную папку --> git clone https://github.com/EugeenDavidenko/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”. === touch new.txt
+ 4. Добавить файл под гит. === git add new.txt
+ 5. Закоммитить файл. === git commit new.txt -m "add new.txt"
+ 6. Отправить файл на внешний GitHub репозиторий. === git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.  === vim new.txt ---> i --> заполняем файл следующими данными:
+
+ФИО - Давыденко Евгений Анатольевич
+возраст - 35
+количество домашних животных-0
+будущая желаемая зарплата - 80 000
+
+ESC:wq
+
+ 8. Отправить изменения на внешний репозиторий. === git status --> git commit -am "update new.txt" --> git push
+ 9. Создать файл preferences.txt === touch preferences.txt
+ 10. В файл preferences.txt добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT. === vim preferences.txt --> заполняем следующими данными:
+
+Любимый фильм - Тихое место
+любимый сериал - Игра престолов
+любимая еда - жареная картошка
+любимое время года - лето
+страна которую хотели бы посетить - Бразилия
+
+ESC:wq
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT === touch sklls.txt --> vim sklls.txt --> заполняем файл следующими данными:
+
+1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC
+2. Что такое клиент серверная архитектура.
+3. Методы запросов на сервер.
+4. Ответы сервера.
+5. Структуры запросов и ответов.
+6. Что такое JSON, XML. Их структура.
+7. Тестирование API.
+8. Снятие и чтение логов.
+9. Postman, Fidler.
+10. VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)
+11. Dev Tools веб браузеров (Google Chrome, FireFox).
+12. Мобильное тестирование.
+13. Особенность iOS, Android, гайдлайны.
+14. Сборка iOS приложений на XCode
+15. Сборка Android приложений на Android Studio
+16. Перехват мобильного трафика (сниффинг) через Charles
+17. Настройка прокси на iOS и Android.
+18. Командная строка (terminal) Linux Ubuntu. Копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса.
+19. Простой bash скриптринг , автоматизация рутинных задач на сервере.
+20. Доступ к удалённым серверам.
+21. Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join
+22. Git
+23. Jmeter
+24. Методология разработки Scrum
+25. Python. Создание собственного клиент-серверного приложения.
+
+ESC:wq
+
+ 12. Сделать коммит в одну строку. git status --> git add . --> git commit -am "add and update preferences.txt and sklls.txt"
+ 13. Отправить сразу 2 файла на внешний репозиторий. === git push
+ 14. На веб интерфейсе создать файл bug_report.txt. === заходим в GITHUB в репозиторий TXT -->  Add file --> Create new file --> даем файлу имя bug_report.txt
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === Commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.=== заходим в bug_report.txt --> Редактировать(карандашик)--> вносим изменения
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. === кнопка Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT === заходим в Gitbash в папку TXT --> git fetch --> git pull

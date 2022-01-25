@@ -1,0 +1,66 @@
+Посмотреть где я === pwd
+Создать папку ===  mkdir foldername
+Зайти в папку === cd foldername
+Создать 3 папки === mkdir foldername_1 foldername_2 foldername_3
+Зайти в любоую папку === cd foldername_1
+Создать 5 файлов (3 txt, 2 json) === touch file_1.txt file_2.txt file_3.txt file_1.json file_2.json
+Создать 3 папки === mkdir foldername_4 foldername_5 foldername_6
+Вывести список содержимого папки === ls
++ Открыть любой txt файл === vim file_1.txt
++ написать туда что-нибудь, любой текст === i , вносим изменения
++ сохранить и выйти === ESC:wq
+Выйти из папки на уровень выше === cd ..
+Переместить любые 2 файла, которые вы создали, в любую другую папку === mv filename_1  filename_2 foldername(куда перемещаем в рамках текущей директории)/адрес папки назначения
+Скопировать любые 2 файла, которые вы создали, в любую другую папку === cp filename_1  filename_2 foldername(куда копируем в рамках текущей директории)/адрес папки назначения
+Найти файл по имени === find filename
+Просмотреть содержимое в реальном времени (команда grep) === tail -f file.txt 
+grep bash file.txt - выведет все строки из файла file.txt содержащие bash, если в искомом тексте есть проблеы необходимо заключить его в кавычки
+grep -v bash file.txt - выведет все строки из файла file.txt НЕ содержащие bash
+grep -w bash file.txt - выведет все строки из файла file.txt  содержащие bash как слово (т.е. исключая bashnya, rubashka и пр.)
+grep -i - поиск bash без учета регистра.
+grep -l bash *.txt - выведет имена файлов данной дериктории, кторые содержат строки с bash 
+Вывести несколько первых строк из текстового файла === head -необходимое число строк filename (например head -3 f_4.txt   выведет первые 3 строки из файла  f_4.txt)
+Вывести несколько последних строк из текстового файла === tail -необходимое число строк filename (например tail -3 f_4.txt   выведет последние 3 строки из файла  f_4.txt)
+Просмотреть содержимое длинного файла (команда less) изучите как она работает === less позволяет перематывать текст в обоих направлениях, переходить сразу в конец или в начало файла.Особенность less заключается в том, что команда не считывает текст полностью, а загружает его небольшими фрагментами.
+less file.txt - выводит содержимое файла file.txt
+less -s file.txt - выводит содержимое файла file.txt без пустых строк
+less -N file.txt - выводит содержимое файла с номерами строк
+Вывести дату и время === date
+
+=========
+
+Задание *
+1) Отправить http запрос на сервер. http://162.55.220.72:5005/terminal-hw-request === curl 'http://162.55.220.72:5005/terminal-hw-request'
+получаем ответ
+
+% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   237  100   237    0     0   1923      0 --:--:-- --:--:-- --:--:--  1958{"Intro":"Hello!! This is your the first response from server","Tasks":{"Task_1":"Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)","result":["Your_String","Your_number"]}}
+
+
+составляем запрос === http://162.55.220.72:5005/get_method?name=Eugeen&age=35
+отправляем запрос === curl 'http://162.55.220.72:5005/get_method?name=Eugeen&age=35'
+получаем ответ
+$ curl 'http://162.55.220.72:5005/get_method?name=Eugeen&age=35'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    16  100    16    0     0    128      0 --:--:-- --:--:-- --:--:--   131["Eugeen","35"]
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+-создаем текстовый файл skript.txt, открываем его черз опертор vim, пишем скрипт:
+
+#!/bin/bash
+# комментарий
+cd directory
+mkdir foldername_1 foldername_2 foldername_3
+cd foldername_1
+touch file_1.txt file_2.txt file_3.txt file_5.json file_6.json
+mkdir foldername_4 foldername_5 foldername_6
+mv file_1.txt file_5.json foldername_6
+
+-делаем файл исполняемым: chmod ugo+x skript.txt
+
+-запускаем скрипт: ./skript.txt
+
+Проверил, работает)
