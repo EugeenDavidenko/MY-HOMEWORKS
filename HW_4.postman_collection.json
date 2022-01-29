@@ -249,12 +249,12 @@
 						},
 						{
 							"key": "salary",
-							"value": "80000"
+							"value": "100000"
 						}
 					]
 				},
 				"url": {
-					"raw": "162.55.220.72:5005/user_info_2?name=Eugeen&age=35&salary=80000",
+					"raw": "162.55.220.72:5005/user_info_2",
 					"host": [
 						"162",
 						"55",
@@ -264,30 +264,6 @@
 					"port": "5005",
 					"path": [
 						"user_info_2"
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "Eugeen"
-						},
-						{
-							"key": "age",
-							"value": "35"
-						},
-						{
-							"key": "",
-							"value": "80000",
-							"disabled": true
-						},
-						{
-							"key": "",
-							"value": null,
-							"disabled": true
-						},
-						{
-							"key": "salary",
-							"value": "80000"
-						}
 					]
 				}
 			},
