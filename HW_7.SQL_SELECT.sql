@@ -41,13 +41,13 @@ select name
 from students
 where created_on='2021-03-26 00:00:00'
 
- --10. Вывести пользователей где в имени есть слово Анна
+ --10. Вывести пользователей где в имени есть слово  Anna
 select name
 from students
-where name like '%Анна%' 
-   or name like 'Анна%' 
-   or name like '%Анна' 
-   or name like 'Анна'
+where name like '%Anna%' 
+   or name like 'Anna%' 
+   or name like '%Anna' 
+   or name like 'Anna'
    
  --11. Вывести пользователей где в имени в конце есть 8
    select name
@@ -129,10 +129,9 @@ from students
 where id>180 and id<190
 
  --25. Вывести пользователя у которых id между 180 и 190
---по смыслу то же самое что п.24 . но если здесь намек на between, то можно так:
 select name
 from students
-where id between 181 and 189
+where id between 180 and 190
 
  --26. Вывести пользователей где password равен 12333, 1m313, 123313
 select *
