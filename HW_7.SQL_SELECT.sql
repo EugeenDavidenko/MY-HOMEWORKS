@@ -1,5 +1,3 @@
---Host: 159.69.151.133
---Port: 5056
 --User: padawan_user_121
 --Pass: 123
 --DB: qa_students_1
