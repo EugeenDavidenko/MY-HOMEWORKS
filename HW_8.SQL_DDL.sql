@@ -1,4 +1,4 @@
---1.Создать таблицу employees
+--1.РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ employees
 -- id. serial,  primary key,
 -- employee_name. Varchar(50), not null
 
@@ -8,36 +8,36 @@ create table employees (
 )
 
 
---2.Наполнить таблицу employee 70 строками.
+--2.РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ employee 70 СЃС‚СЂРѕРєР°РјРё.
 
  insert into employees (employee_name)
  values ('Eugeen_1'),
-		('Eugeen_2'),
+	('Eugeen_2'),
         ('Eugeen_3'),
-		('Eugeen_4'),
-	    ('Eugeen_5'),
-		('Eugeen_6'),
-	    ('Eugeen_7'),
-		('Eugeen_8'),
-		('Eugeen_9'),
-		('Eugeen_10'),
-		('Bocman_1'),
-		('Bocman_2'),
-		('Bocman_3'),
-		('Bocman_4'),
-		('Bocman_5'),
-		('Bocman_6'),
-		('Bocman_7'),
-		('Bocman_8'),
-	    ('Bocman_9'),
-		('Bocman_10'),
-		('Alex_1'),
-		('Alex_2'),
-		('Alex_3'),
-		('Alex_4'),
-		('Alex_5'),
-		('Alex_6'),
-	    ('Alex_7'),
+	('Eugeen_4'),
+	('Eugeen_5'),
+        ('Eugeen_6'),
+	('Eugeen_7'),
+	('Eugeen_8'),
+	('Eugeen_9'),
+	('Eugeen_10'),
+	('Bocman_1'),
+	('Bocman_2'),
+	('Bocman_3'),
+	('Bocman_4'),
+	('Bocman_5'),
+	('Bocman_6'),
+	('Bocman_7'),
+	('Bocman_8'),
+	('Bocman_9'),
+	('Bocman_10'),
+	('Alex_1'),
+	('Alex_2'),
+	('Alex_3'),
+	('Alex_4'),
+	('Alex_5'),
+	('Alex_6'),
+	('Alex_7'),
         ('Alex_8'),
         ('Alex_9'),
         ('Alex_10'),
@@ -56,14 +56,14 @@ create table employees (
         ('Migus_3'),
         ('Migus_4'),
         ('Migus_5'),
-	    ('Migus_6'),
+	('Migus_6'),
         ('Migus_7'),
-		('Migus_8'),
-		('Migus_9'),
-		('Migus_10'),
-		('Bocha_1'),
-		('Bocha_2'),
-		('Bocha_3'),
+	('Migus_8'),
+	('Migus_9'),
+	('Migus_10'),
+	('Bocha_1'),
+	('Bocha_2'),
+	('Bocha_3'),
         ('Bocha_4'),
         ('Bocha_5'),
         ('Bocha_6'),
@@ -71,11 +71,11 @@ create table employees (
         ('Bocha_8'),
         ('Bocha_9'),
         ('Bocha_10'),
-	    ('Pasha_1'),
-	    ('Pasha_2'),
-	    ('Pasha_3'),
+	('Pasha_1'),
+	('Pasha_2'),
+	('Pasha_3'),
         ('Pasha_4'),
-	    ('Pasha_5'),
+	('Pasha_5'),
         ('Pasha_6'),
         ('Pasha_7'),
         ('Pasha_8'),
@@ -83,7 +83,7 @@ create table employees (
         ('Pasha_10')
         
 
-/*3.Создать таблицу salary
+/*3.РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ salary
 - id. Serial  primary key,
 - monthly_salary. Int, not null*/
 
@@ -92,7 +92,7 @@ create table salary (
 monthly_salary int not null
 );
 
-/*4.Наполнить таблицу salary 15 строками:
+/*4.РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ salary 15 СЃС‚СЂРѕРєР°РјРё:
 - 1000
 - 1100
 - 1200
@@ -112,23 +112,23 @@ monthly_salary int not null
 
 insert into salary (monthly_salary)
 values  (1000),
-	    (1100),
-	    (1200),
+	(1100),
+	(1200),
      	(1300),
-	    (1400),
-	    (1500),
-	    (1600),
-	    (1700),
-	    (1800),
-	    (1900),
-	    (2000),
-	    (2100),
-	    (2200),
-	    (2300),
-	    (2400),
-	    (2500);
+	(1400),
+	(1500),
+	(1600),
+	(1700),
+	(1800),
+	(1900),
+	(2000),
+	(2100),
+	(2200),
+	(2300),
+	(2400),
+	(2500);
 	   
-/*5.Создать таблицуemployee_salary 
+/*5.РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓemployee_salary 
 - id. Serial  primary key,
 - employee_id. Int, not null, unique
 - salary_id. Int, not null */
@@ -139,55 +139,55 @@ employee_id int not null unique,
 salary_id int not null
 );
 
-/*6.Наполнить таблицу employee_salary 40 строками:
-- в 10 строк из 40 вставить несуществующие employee_id
-Данные для первых 10 строк берем из задания. 
-Чтобы указать несуществующие employee_id указываем в 10 строках employee_id > 70 т.к. это максимальное значение id в таблице employees.
-выполняем запрос. */
+/*6.РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ employee_salary 40 СЃС‚СЂРѕРєР°РјРё:
+- РІ 10 СЃС‚СЂРѕРє РёР· 40 РІСЃС‚Р°РІРёС‚СЊ РЅРµСЃСѓС‰РµСЃС‚РІСѓСЋС‰РёРµ employee_id
+Р”Р°РЅРЅС‹Рµ РґР»СЏ РїРµСЂРІС‹С… 10 СЃС‚СЂРѕРє Р±РµСЂРµРј РёР· Р·Р°РґР°РЅРёСЏ. 
+Р§С‚РѕР±С‹ СѓРєР°Р·Р°С‚СЊ РЅРµСЃСѓС‰РµСЃС‚РІСѓСЋС‰РёРµ employee_id СѓРєР°Р·С‹РІР°РµРј РІ 10 СЃС‚СЂРѕРєР°С… employee_id > 70 С‚.Рє. СЌС‚Рѕ РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ id РІ С‚Р°Р±Р»РёС†Рµ employees.
+РІС‹РїРѕР»РЅСЏРµРј Р·Р°РїСЂРѕСЃ. */
 
 insert into employee_salary (employee_id,salary_id)
 values  (3,7),
         (1,4),
         (5,9),
-		(40,13),
-		(23,4),
-		(11,2),
-		(52,10),
-		(15,13),
-		(26,4),
-		(16,1),
-		(33,7),
-		(71,3),
-		(4,5),
-		(72,6),
-		(25,15),
-		(73,10),
-		(51,9),
-		(74,11),
-		(30,14),
-		(75,16),
-		(35,2),
-		(76,6),
-		(44,9),
-		(77,12),
-		(45,15),
-		(78,14),
-		(50,11),
-		(79,8),
-		(55,5),
-		(80,2),
-		(22,1),
-		(32,4),
-		(27,7),
-		(41,10),
-		(37,13),
-		(53,16),
-		(49,12),
-		(17,9),
-		(20,6),
-		(42,3);
+	(40,13),
+	(23,4),
+	(11,2),
+	(52,10),
+	(15,13),
+	(26,4),
+	(16,1),
+	(33,7),
+	(71,3),
+	(4,5),
+	(72,6),
+	(25,15),
+	(73,10),
+	(51,9),
+	(74,11),
+	(30,14),
+	(75,16),
+	(35,2),
+	(76,6),
+	(44,9),
+	(77,12),
+	(45,15),
+	(78,14),
+	(50,11),
+	(79,8),
+	(55,5),
+	(80,2),
+	(22,1),
+	(32,4),
+	(27,7),
+	(41,10),
+	(37,13),
+	(53,16),
+	(49,12),
+	(17,9),
+	(20,6),
+	(42,3);
 		
-/*7.Создать таблицу roles
+/*7.РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ roles
 - id. Serial  primary key,
 - role_name. int, not null, unique*/
 
@@ -196,12 +196,12 @@ id serial primary key,
 role_name int not null unique
 );
 
-/*8. Поменять тип столба role_name с int на varchar(30)*/
+/*8. РџРѕРјРµРЅСЏС‚СЊ С‚РёРї СЃС‚РѕР»Р±Р° role_name СЃ int РЅР° varchar(30)*/
 
 alter table roles 
 alter column role_name type varchar(30)
 
-/*9.Наполнить таблицу roles 20 строками:*/
+/*9.РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ roles 20 СЃС‚СЂРѕРєР°РјРё:*/
 insert into roles (role_name)
 values  ('Junior Python developer'),
 		('Middle Python developer'),
@@ -224,10 +224,10 @@ values  ('Junior Python developer'),
 		('Middle Automation QA engineer'),
 		('Senior Automation QA engineer');
 
-/*10.Создать таблицу roles_employee
+/*10.РЎРѕР·РґР°С‚СЊ С‚Р°Р±Р»РёС†Сѓ roles_employee
 - id. Serial  primary key,
-- employee_id. Int, not null, unique (внешний ключ для таблицы employees, поле id)
-- role_id. Int, not null (внешний ключ для таблицы roles, поле id)*/
+- employee_id. Int, not null, unique (РІРЅРµС€РЅРёР№ РєР»СЋС‡ РґР»СЏ С‚Р°Р±Р»РёС†С‹ employees, РїРѕР»Рµ id)
+- role_id. Int, not null (РІРЅРµС€РЅРёР№ РєР»СЋС‡ РґР»СЏ С‚Р°Р±Р»РёС†С‹ roles, РїРѕР»Рµ id)*/
 
 create table roles_employee (
           id serial  primary key,
@@ -237,7 +237,7 @@ create table roles_employee (
      foreign key (role_id) references roles(id)
 );
 
-/*Наполнить таблицу roles_employee 40 строками:*/
+/*11.РќР°РїРѕР»РЅРёС‚СЊ С‚Р°Р±Р»РёС†Сѓ roles_employee 40 СЃС‚СЂРѕРєР°РјРё:*/
 insert into roles_employee (employee_id,role_id)
 values  (7,2),
         (20,4),
